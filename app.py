@@ -6,7 +6,8 @@ import streamlit as st
 import os
 from dotenv import load_dotenv
 
-#os.environ["OPENAI_API_KEY"]=os.getenv("OPENAI_API_KEY")
+os.environ["OPENAI_API_KEY"]=os.getenv("OPENAI_API_KEY")
+
 ## Langmith tracking
 os.environ["LANGCHAIN_TRACING_V2"]="true"
 os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_KEY")
@@ -22,8 +23,8 @@ prompt=ChatPromptTemplate.from_messages(
 
 ## streamlit framework
 
-st.title('Langchain Bot With OPENAI API')
-input_text=st.text_input("Search the topic u want")
+st.title('Bajaj Finance Assistant')
+input_text=st.text_input("Search the topic you want")
 
 # openAI LLm 
 llm=ChatOpenAI(model="gpt-3.5-turbo")

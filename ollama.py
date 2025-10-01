@@ -26,8 +26,8 @@ prompt=ChatPromptTemplate.from_messages(
 
 ## streamlit framework
 
-st.title('Langchain Bot With Llama2 API')
-input_text=st.text_input("Search the topic u want")
+st.title('Bajaj Finance Assistant')
+input_text=st.text_input("Search the topic you want")
 
 # openAI LLm 
 #llm=ChatOpenAI(model="gpt-3.5-turbo")
