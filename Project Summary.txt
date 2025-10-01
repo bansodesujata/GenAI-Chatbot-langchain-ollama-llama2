@@ -1,0 +1,27 @@
+Project Summary: Langchain Bot with OpenAI & Llama2
+
+This project demonstrates the integration of Langchain with two powerful language models—OpenAI's GPT-3.5 Turbo and Llama2 via Ollama—to build 
+intelligent chatbot applications using Streamlit as the front-end interface.
+
+🎯 Objective
+To showcase the ability to build modular, scalable, and interactive AI-powered bots using Langchain's chaining capabilities, prompt engineering, and model abstraction.
+
+📁 Project Structure
+- app.py: Implements a chatbot using OpenAI's GPT-3.5 Turbo model. It uses Langchain's ChatPromptTemplate and StrOutputParser to process user input and generate responses.
+- ollama.py: Mirrors the functionality of app.py but uses the Llama2 model via the Ollama framework, demonstrating flexibility in switching between LLM providers.
+- .env: Stores API keys securely using python-dotenv.
+- deploy.sh: A shell script that automates environment setup, dependency installation, Ollama configuration, and launches both bots.
+
+⚙️ Key Features
+- Dual-model support: Easily switch between OpenAI and Llama2.
+- Langchain chaining: Combines prompt templates, LLMs, and output parsers.
+- Streamlit UI: Simple and intuitive interface for user interaction.
+- Ollama integration: Local deployment of Llama2 for cost-effective inference.
+- Environment automation: deploy.sh streamlines setup and execution.
+
+🚀 How to Run
+- Clone the repository.
+- Run deploy.sh to set up the environment and launch both bots.
+- Access the bots via your browser on separate Streamlit ports.
+
+
